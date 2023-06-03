@@ -38,9 +38,10 @@ document.querySelector(".check").addEventListener("click", function () {
 //  RESET GAME
 document.querySelector(".again").addEventListener("click", function () {
   secretNumber = randNum();
+  score = 20;
   document.querySelector("body").style.backgroundColor = "#222";
   document.querySelector(".number").style.width = "15rem";
-  document.querySelector(".score").textContent = 20;
+  document.querySelector(".score").textContent = score;
   document.querySelector(".message").textContent = "Start Guessing....";
   document.querySelector(".guess").value = " ";
   document.querySelector(".number").textContent = "?";
